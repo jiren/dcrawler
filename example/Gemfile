@@ -1,0 +1,6 @@
+source :rubygems
+
+#gem "dcrawler", :git => "git@github.com:jiren/dcrawler_lite.git"
+gem 'dcrawler', :path => "../"
+gem 'mongo'
+gem 'bson_ext'
