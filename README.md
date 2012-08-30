@@ -51,22 +51,27 @@ Also, we can define 'CRAWLER' variable in ruby script.
 Crawler Example
 ===============
 
-Add domains or links to be crawl.
+Add domains or links to be crawler
+-----------------------------------
 
     Dcrawler::Link.enq(:url => 'http://www.example.com/')
 
 Options
+-------
     
     opts = {:verbose => true, 
             :queue_timeout => 20, 
             :page_crawl_limit => 10}
        
-queue_timeout: stop crawler if it is idle for queue_timeout.
-page_crawl_limit: max page to be crawl.
+- queue_timeout: stop crawler if it is idle for queue_timeout.
+- page_crawl_limit: max page to be crawl.
 
 Start crawler
+-------------
 
-  Dcrawler::Core.crawl(opts)
+    Dcrawler::Core.crawl(opts)
 
+Example
+=======
 For sample example you can find into example folder.
 
